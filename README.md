@@ -6,11 +6,16 @@
 ## Sumary
 - [Description](#description)
 - [Installation](#installation)
+- [Features](#features)
+  - [Cropping Images](#cropping-images)
+  - [Google Gemini](#google-gemini)
+  - [Manage Datas with Firebase Database](#manage-datas-with-firebase-database)
+  - [Manage IMages with Firebase Storage](#manage-images-with-firebase-storage)
 
 ## Description
 CarVision in an iOS app that let you take a picture of a car and thanks to Google AI Gemini gives you the brand, the model and so more.
 
-## Instalation
+## Installation
 
 ### Clone the repository
 ```shell
