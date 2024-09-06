@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11113F6D2C80B7D2006FDC84 /* CarVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11113F6C2C80B7D2006FDC84 /* CarVisionApp.swift */; };
+		11113F6F2C80B7D2006FDC84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11113F6E2C80B7D2006FDC84 /* ContentView.swift */; };
+		11113F712C80B7D4006FDC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11113F702C80B7D4006FDC84 /* Assets.xcassets */; };
+		11113F742C80B7D4006FDC84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11113F732C80B7D4006FDC84 /* Preview Assets.xcassets */; };
+		11113F7D2C80D17E006FDC84 /* CarAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11113F7C2C80D17E006FDC84 /* CarAIView.swift */; };
+		11113F812C80D22C006FDC84 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11113F802C80D22C006FDC84 /* APIKey.swift */; };
+		11113F842C80D245006FDC84 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 11113F832C80D245006FDC84 /* GoogleGenerativeAI */; };
+		11137FC82C84895600CC59BB /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11137FC72C84895600CC59BB /* CropImageView.swift */; };
+		11D685BE2C8305BD00D75C1B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D685BD2C8305BD00D75C1B /* Car.swift */; };
+		11D685C02C8305D400D75C1B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D685BF2C8305D400D75C1B /* User.swift */; };
+		CE3262B52C86FFF3002F6054 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE3262B42C86FFF3002F6054 /* GenerativeAI-Info.plist */; };
+		CE3262BA2C872E6C002F6054 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3262B92C872E6C002F6054 /* CarListView.swift */; };
+		CE3262BC2C873960002F6054 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3262BB2C873960002F6054 /* CarDetailView.swift */; };
+		CE3262C02C8892A7002F6054 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE3262BF2C8892A7002F6054 /* GoogleService-Info.plist */; };
+		CE3262C32C88932A002F6054 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE3262C22C88932A002F6054 /* FirebaseDatabase */; };
+		CE3262C52C88932A002F6054 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE3262C42C88932A002F6054 /* FirebaseFirestore */; };
+		CE3262C72C88932A002F6054 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CE3262C62C88932A002F6054 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11113F692C80B7D2006FDC84 /* CarVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11113F6C2C80B7D2006FDC84 /* CarVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisionApp.swift; sourceTree = "<group>"; };
+		11113F6E2C80B7D2006FDC84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		11113F702C80B7D4006FDC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11113F732C80B7D4006FDC84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11113F7C2C80D17E006FDC84 /* CarAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAIView.swift; sourceTree = "<group>"; };
+		11113F802C80D22C006FDC84 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		11137FC72C84895600CC59BB /* CropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
+		11D685BD2C8305BD00D75C1B /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		11D685BF2C8305D400D75C1B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE3262B42C86FFF3002F6054 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		CE3262B92C872E6C002F6054 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
+		CE3262BB2C873960002F6054 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
+		CE3262BF2C8892A7002F6054 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11113F662C80B7D2006FDC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3262C32C88932A002F6054 /* FirebaseDatabase in Frameworks */,
+				CE3262C72C88932A002F6054 /* FirebaseStorage in Frameworks */,
+				11113F842C80D245006FDC84 /* GoogleGenerativeAI in Frameworks */,
+				CE3262C52C88932A002F6054 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11113F602C80B7D2006FDC84 = {
+			isa = PBXGroup;
+			children = (
+				11113F6B2C80B7D2006FDC84 /* CarVision */,
+				11113F6A2C80B7D2006FDC84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11113F6A2C80B7D2006FDC84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11113F692C80B7D2006FDC84 /* CarVision.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11113F6B2C80B7D2006FDC84 /* CarVision */ = {
+			isa = PBXGroup;
+			children = (
+				11113F6C2C80B7D2006FDC84 /* CarVisionApp.swift */,
+				11113F6E2C80B7D2006FDC84 /* ContentView.swift */,
+				CE3262B42C86FFF3002F6054 /* GenerativeAI-Info.plist */,
+				11D685BF2C8305D400D75C1B /* User.swift */,
+				CE3262B92C872E6C002F6054 /* CarListView.swift */,
+				11113F7C2C80D17E006FDC84 /* CarAIView.swift */,
+				CE3262BB2C873960002F6054 /* CarDetailView.swift */,
+				CE3262BF2C8892A7002F6054 /* GoogleService-Info.plist */,
+				11137FC72C84895600CC59BB /* CropImageView.swift */,
+				11113F802C80D22C006FDC84 /* APIKey.swift */,
+				11113F702C80B7D4006FDC84 /* Assets.xcassets */,
+				11D685BD2C8305BD00D75C1B /* Car.swift */,
+				11113F722C80B7D4006FDC84 /* Preview Content */,
+			);
+			path = CarVision;
+			sourceTree = "<group>";
+		};
+		11113F722C80B7D4006FDC84 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				11113F732C80B7D4006FDC84 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11113F682C80B7D2006FDC84 /* CarVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11113F772C80B7D4006FDC84 /* Build configuration list for PBXNativeTarget "CarVision" */;
+			buildPhases = (
+				11113F652C80B7D2006FDC84 /* Sources */,
+				11113F662C80B7D2006FDC84 /* Frameworks */,
+				11113F672C80B7D2006FDC84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarVision;
+			packageProductDependencies = (
+				11113F832C80D245006FDC84 /* GoogleGenerativeAI */,
+				CE3262C22C88932A002F6054 /* FirebaseDatabase */,
+				CE3262C42C88932A002F6054 /* FirebaseFirestore */,
+				CE3262C62C88932A002F6054 /* FirebaseStorage */,
+			);
+			productName = CarVision;
+			productReference = 11113F692C80B7D2006FDC84 /* CarVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11113F612C80B7D2006FDC84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					11113F682C80B7D2006FDC84 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 11113F642C80B7D2006FDC84 /* Build configuration list for PBXProject "CarVision" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11113F602C80B7D2006FDC84;
+			packageReferences = (
+				11113F822C80D245006FDC84 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				CE3262C12C88932A002F6054 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 11113F6A2C80B7D2006FDC84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11113F682C80B7D2006FDC84 /* CarVision */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11113F672C80B7D2006FDC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11113F742C80B7D4006FDC84 /* Preview Assets.xcassets in Resources */,
+				CE3262C02C8892A7002F6054 /* GoogleService-Info.plist in Resources */,
+				11113F712C80B7D4006FDC84 /* Assets.xcassets in Resources */,
+				CE3262B52C86FFF3002F6054 /* GenerativeAI-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11113F652C80B7D2006FDC84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11137FC82C84895600CC59BB /* CropImageView.swift in Sources */,
+				11113F6F2C80B7D2006FDC84 /* ContentView.swift in Sources */,
+				11D685BE2C8305BD00D75C1B /* Car.swift in Sources */,
+				11113F7D2C80D17E006FDC84 /* CarAIView.swift in Sources */,
+				11113F6D2C80B7D2006FDC84 /* CarVisionApp.swift in Sources */,
+				11113F812C80D22C006FDC84 /* APIKey.swift in Sources */,
+				11D685C02C8305D400D75C1B /* User.swift in Sources */,
+				CE3262BC2C873960002F6054 /* CarDetailView.swift in Sources */,
+				CE3262BA2C872E6C002F6054 /* CarListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		11113F752C80B7D4006FDC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11113F762C80B7D4006FDC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11113F782C80B7D4006FDC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarVision/Preview Content\"";
+				DEVELOPMENT_TEAM = T6PF4S9ABL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tgiraudo.CarVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11113F792C80B7D4006FDC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarVision/Preview Content\"";
+				DEVELOPMENT_TEAM = T6PF4S9ABL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tgiraudo.CarVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11113F642C80B7D2006FDC84 /* Build configuration list for PBXProject "CarVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11113F752C80B7D4006FDC84 /* Debug */,
+				11113F762C80B7D4006FDC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11113F772C80B7D4006FDC84 /* Build configuration list for PBXNativeTarget "CarVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11113F782C80B7D4006FDC84 /* Debug */,
+				11113F792C80B7D4006FDC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11113F822C80D245006FDC84 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+		CE3262C12C88932A002F6054 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11113F832C80D245006FDC84 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11113F822C80D245006FDC84 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+		CE3262C22C88932A002F6054 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE3262C12C88932A002F6054 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		CE3262C42C88932A002F6054 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE3262C12C88932A002F6054 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CE3262C62C88932A002F6054 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE3262C12C88932A002F6054 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 11113F612C80B7D2006FDC84 /* Project object */;
+}
