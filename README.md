@@ -1,5 +1,8 @@
 # CarVision
 
+
+![](assets/usage.gif)
+
 ## Sumary
 - [Description](#description)
 - [Installation](#installation)
