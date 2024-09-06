@@ -25,7 +25,9 @@ Then inside this file add the key `API_KEY` and your gemini's api key as value.
 
 - #### GoogleService.plist:
 Go on [FireBase](https://console.firebase.google.com/) and create a new app with your Bundle Identifier.
-// TODO add picture to show how to change it
+You can get yours following those steps :
+
+![alt text](assets/Bundle-Id.png)
 
 Than add a Storage and a Database. Don't forget to change the rules:
 
