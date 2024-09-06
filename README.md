@@ -307,5 +307,5 @@ I called this func on all car from the history to set the optionnal UIImage to t
             }
         }
 ```
-I called it like that and the ContentView file.
-I added a isListening boolean to display a ProgressView while the program is loading all the datas and images.
+I'm calling it like that in the `ContentView` file.
+I added a `isListening` boolean to display a `ProgressView` while the program is loading all the datas and images.
