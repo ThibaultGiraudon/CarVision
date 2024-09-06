@@ -85,11 +85,6 @@ struct Car: Equatable, Identifiable, Codable {
         self.imageURL = try container.decode(String.self, forKey: .imageURL)
         self.isFavorite = try container.decode(Bool.self, forKey: .isFavorite)
     }
-    
-    mutating func loadImage() async {
-        let vm = ViewModel(imageURL: self.imageURL)
-        self.image = await vm.getImage()
-    }
 	
 	init() {
 		self.brand = ""
