@@ -52,8 +52,9 @@ struct CarListView<Content: View>: View {
                     Image(systemName: "magnifyingglass")
                     TextField("Search", text: $searchText)
                         .focused($focused)
+                        .submitLabel(.search)
                     Spacer()
-                    if !searchText.isEmpty {
+                    if !searchText.isEmpty || focused {
                         Image(systemName: "xmark.circle.fill")
                             .onTapGesture {
                                 searchText = ""
@@ -68,7 +69,7 @@ struct CarListView<Content: View>: View {
                 if filteredCars.isEmpty {
                     emptyView
                 } else {
-                    ScrollView {
+                    ScrollView(showsIndicators: false) {
                         LazyVGrid(columns: [.init(), .init()]) {
                             ForEach(filteredCars, id: \.id) { car in
                                 ZStack(alignment: .bottom) {
@@ -111,19 +112,6 @@ struct CarListView<Content: View>: View {
             .background(Color("OffWhite"))
         }
     }
-    
-    @ViewBuilder
-    func expandableSearch() -> some View {
-        HStack {
-            Image(systemName: "magnifyingglass")
-                .foregroundStyle(.gray)
-            TextField("Search", text: $searchText)
-        }
-        .padding(5)
-        .background(.thickMaterial)
-        .clipShape(Capsule())
-    }
-    
 }
 
 #Preview {
