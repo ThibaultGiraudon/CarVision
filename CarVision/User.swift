@@ -51,10 +51,17 @@ class User: ObservableObject, Equatable {
     }
     
     func addCarToDB(car: Car) {
-        let collectionRef = db
         
         do {
-            try collectionRef.document("cars/\(car.id)").setData(from: car)
+            try db.document("cars/\(car.id)").setData(from: car)
+        } catch {
+            print(error)
+        }
+    }
+    
+    func editCar(car: Car) {
+        do {
+            try db.document("cars/\(car.id)").setData(from: car)
         } catch {
             print(error)
         }
@@ -87,12 +94,22 @@ class User: ObservableObject, Equatable {
     func addCarToFav(_ car: Car) {
         if let index = history.firstIndex(of: car) {
             history[index].isFavorite = true
+            do {
+                try db.document("cars/\(history[index].id)").setData(from: history[index])
+            } catch {
+                print(error)
+            }
         }
     }
     
     func removeCarFromFav(_ car: Car) {
         if let index = history.firstIndex(of: car) {
             history[index].isFavorite = false
+            do {
+                try db.document("cars/\(history[index].id)").setData(from: history[index])
+            } catch {
+                print(error)
+            }
         }
     }
     

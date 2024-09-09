@@ -163,7 +163,11 @@ struct CarAIView: View {
                     let architecture = components[7]
                     let turbo = components[8]
                     let colorName = components[9]
-                    car = Car(brand: String(brand), model: String(model), horsepower: String(horsepower), speed: String(speed), acceleration: String(acceleration), colorName: String(colorName), displacement: String(displacement), cylinders: String(cylinders), architecture: String(architecture), turbo: String(turbo), imageURL: imageURL)
+                    if !imageURL.isEmpty {
+                        car = Car(brand: String(brand), model: String(model), horsepower: String(horsepower), speed: String(speed), acceleration: String(acceleration), colorName: String(colorName), displacement: String(displacement), cylinders: String(cylinders), architecture: String(architecture), turbo: String(turbo), imageURL: imageURL)
+                    } else {
+                        analyzedResult = "Error while uploading image please try again"
+                    }
                     Task {
                         await user.loadImage(for: car)
                     }
