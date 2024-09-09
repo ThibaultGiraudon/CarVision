@@ -1,13 +1,21 @@
 # CarVision
 
+
+![](assets/usage.gif)
+
 ## Sumary
 - [Description](#description)
 - [Installation](#installation)
+- [Features](#features)
+  - [Cropping Images](#cropping-images)
+  - [Google Gemini](#google-gemini)
+  - [Manage Datas with Firebase Database](#manage-datas-with-firebase-database)
+  - [Manage IMages with Firebase Storage](#manage-images-with-firebase-storage)
 
 ## Description
 CarVision in an iOS app that let you take a picture of a car and thanks to Google AI Gemini gives you the brand, the model and so more.
 
-## Instalation
+## Installation
 
 ### Clone the repository
 ```shell
@@ -25,7 +33,9 @@ Then inside this file add the key `API_KEY` and your gemini's api key as value.
 
 - #### GoogleService.plist:
 Go on [FireBase](https://console.firebase.google.com/) and create a new app with your Bundle Identifier.
-// TODO add picture to show how to change it
+You can get yours following those steps :
+
+![alt text](assets/Bundle-Id.png)
 
 Than add a Storage and a Database. Don't forget to change the rules:
 
@@ -297,5 +307,5 @@ I called this func on all car from the history to set the optionnal UIImage to t
             }
         }
 ```
-I called it like that and the ContentView file.
-I added a isListening boolean to display a ProgressView while the program is loading all the datas and images.
+I'm calling it like that in the `ContentView` file.
+I added a `isListening` boolean to display a `ProgressView` while the program is loading all the datas and images.
