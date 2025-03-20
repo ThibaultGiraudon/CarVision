@@ -3,23 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		11113F6D2C80B7D2006FDC84 /* CarVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11113F6C2C80B7D2006FDC84 /* CarVisionApp.swift */; };
-		11113F6F2C80B7D2006FDC84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11113F6E2C80B7D2006FDC84 /* ContentView.swift */; };
 		11113F712C80B7D4006FDC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11113F702C80B7D4006FDC84 /* Assets.xcassets */; };
 		11113F742C80B7D4006FDC84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11113F732C80B7D4006FDC84 /* Preview Assets.xcassets */; };
-		11113F7D2C80D17E006FDC84 /* CarAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11113F7C2C80D17E006FDC84 /* CarAIView.swift */; };
 		11113F812C80D22C006FDC84 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11113F802C80D22C006FDC84 /* APIKey.swift */; };
 		11113F842C80D245006FDC84 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 11113F832C80D245006FDC84 /* GoogleGenerativeAI */; };
-		11137FC82C84895600CC59BB /* CropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11137FC72C84895600CC59BB /* CropImageView.swift */; };
-		11D685BE2C8305BD00D75C1B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D685BD2C8305BD00D75C1B /* Car.swift */; };
-		11D685C02C8305D400D75C1B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D685BF2C8305D400D75C1B /* User.swift */; };
 		CE3262B52C86FFF3002F6054 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE3262B42C86FFF3002F6054 /* GenerativeAI-Info.plist */; };
-		CE3262BA2C872E6C002F6054 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3262B92C872E6C002F6054 /* CarListView.swift */; };
-		CE3262BC2C873960002F6054 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3262BB2C873960002F6054 /* CarDetailView.swift */; };
 		CE3262C02C8892A7002F6054 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE3262BF2C8892A7002F6054 /* GoogleService-Info.plist */; };
 		CE3262C32C88932A002F6054 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE3262C22C88932A002F6054 /* FirebaseDatabase */; };
 		CE3262C52C88932A002F6054 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE3262C42C88932A002F6054 /* FirebaseFirestore */; };
@@ -29,19 +22,17 @@
 /* Begin PBXFileReference section */
 		11113F692C80B7D2006FDC84 /* CarVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11113F6C2C80B7D2006FDC84 /* CarVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisionApp.swift; sourceTree = "<group>"; };
-		11113F6E2C80B7D2006FDC84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11113F702C80B7D4006FDC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11113F732C80B7D4006FDC84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		11113F7C2C80D17E006FDC84 /* CarAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAIView.swift; sourceTree = "<group>"; };
 		11113F802C80D22C006FDC84 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
-		11137FC72C84895600CC59BB /* CropImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageView.swift; sourceTree = "<group>"; };
-		11D685BD2C8305BD00D75C1B /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		11D685BF2C8305D400D75C1B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE3262B42C86FFF3002F6054 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
-		CE3262B92C872E6C002F6054 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
-		CE3262BB2C873960002F6054 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
 		CE3262BF2C8892A7002F6054 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CE6369722D8C636C00B29D0B /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		CE6369732D8C638600B29D0B /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		11113F662C80B7D2006FDC84 /* Frameworks */ = {
@@ -78,17 +69,12 @@
 			isa = PBXGroup;
 			children = (
 				11113F6C2C80B7D2006FDC84 /* CarVisionApp.swift */,
-				11113F6E2C80B7D2006FDC84 /* ContentView.swift */,
 				CE3262B42C86FFF3002F6054 /* GenerativeAI-Info.plist */,
-				11D685BF2C8305D400D75C1B /* User.swift */,
-				CE3262B92C872E6C002F6054 /* CarListView.swift */,
-				11113F7C2C80D17E006FDC84 /* CarAIView.swift */,
-				CE3262BB2C873960002F6054 /* CarDetailView.swift */,
+				CE6369732D8C638600B29D0B /* Models */,
+				CE6369722D8C636C00B29D0B /* Views */,
 				CE3262BF2C8892A7002F6054 /* GoogleService-Info.plist */,
-				11137FC72C84895600CC59BB /* CropImageView.swift */,
 				11113F802C80D22C006FDC84 /* APIKey.swift */,
 				11113F702C80B7D4006FDC84 /* Assets.xcassets */,
-				11D685BD2C8305BD00D75C1B /* Car.swift */,
 				11113F722C80B7D4006FDC84 /* Preview Content */,
 			);
 			path = CarVision;
@@ -116,6 +102,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CE6369722D8C636C00B29D0B /* Views */,
+				CE6369732D8C638600B29D0B /* Models */,
 			);
 			name = CarVision;
 			packageProductDependencies = (
@@ -184,15 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11137FC82C84895600CC59BB /* CropImageView.swift in Sources */,
-				11113F6F2C80B7D2006FDC84 /* ContentView.swift in Sources */,
-				11D685BE2C8305BD00D75C1B /* Car.swift in Sources */,
-				11113F7D2C80D17E006FDC84 /* CarAIView.swift in Sources */,
 				11113F6D2C80B7D2006FDC84 /* CarVisionApp.swift in Sources */,
 				11113F812C80D22C006FDC84 /* APIKey.swift in Sources */,
-				11D685C02C8305D400D75C1B /* User.swift in Sources */,
-				CE3262BC2C873960002F6054 /* CarDetailView.swift in Sources */,
-				CE3262BA2C872E6C002F6054 /* CarListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
