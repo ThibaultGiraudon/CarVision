@@ -16,7 +16,7 @@ struct CarDetailView: View {
     @State var isFavorite = false
     @Environment(\.dismiss) var dismiss
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             Image(uiImage: car.image ?? UIImage())
                 .resizable()
                 .scaledToFit()
