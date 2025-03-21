@@ -25,28 +25,17 @@ class User: ObservableObject {
             
             self.history = try await db.fetchData()
             
-            // Lancer tous les téléchargements en parallèle
-            try await withThrowingTaskGroup(of: (Car, UIImage?).self) { group in
+            await withTaskGroup(of: Void.self) { group in
                 for car in history {
                     group.addTask {
-                        let image = await self.getImage(imageURL: car.imageURL)
-                        return (car, image)
-                    }
-                }
-                
-                // Mettre à jour les images une fois qu'elles sont prêtes
-                for try await (car, image) in group {
-                    if let index = self.history.firstIndex(of: car) {
-                        self.history[index].image = image
+                        await self.loadImage(for: car)
                     }
                 }
             }
             
             let endTime = Date() // Fin du chrono
             let elapsedTime = endTime.timeIntervalSince(startTime)
-            print("Temps de chargement avec async let: \(elapsedTime) secondes")
-//            Temps de chargement séquentiel: 10.031455993652344 secondes
-//            Temps de chargement parallèle: 2.7916311025619507 secondes
+            print("Temps de chargement parallèle: \(elapsedTime) secondes")
         } catch {
             print("Error fetching items: \(error.localizedDescription)")
         }

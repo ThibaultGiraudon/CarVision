@@ -80,9 +80,9 @@ struct CropImageView: View {
 						.stroke(Color.white, lineWidth: 1)
 						.frame(width: 300, height: 225)
 				}
-		}
-        .simultaneousGesture(dragGeometry)
-        .simultaneousGesture(scaleGesture)
+                .simultaneousGesture(scaleGesture)
+                .highPriorityGesture(dragGeometry)
+        }
 		.toolbar {
 			ToolbarItem(placement: .navigationBarTrailing) {
 				Button(action: {
@@ -106,8 +106,6 @@ struct CropImageView: View {
             vm.imageViewSize.width = image!.size.width * factor
 		}
 	}
-
-	
 }
 
 #Preview {
