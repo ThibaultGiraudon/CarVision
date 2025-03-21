@@ -13,7 +13,6 @@ struct CarListView<Content: View>: View {
     var cars: [Car]
     @ViewBuilder let emptyView: Content
     @Namespace var imageAnimation
-    @Namespace var textAnimation
     @FocusState var focused
     @State private var selectedCar: Car = Car()
     @State private var searchText = ""
@@ -25,7 +24,7 @@ struct CarListView<Content: View>: View {
     }
     var body: some View {
         if user.isShowingDetail {
-            CarDetailView(user: user, car: selectedCar, imageAnimation: imageAnimation, textAnimation: textAnimation)
+            CarDetailView(user: user, car: selectedCar, imageAnimation: imageAnimation)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         Button {
@@ -84,7 +83,6 @@ struct CarListView<Content: View>: View {
                                         .foregroundStyle(.white)
                                         .clipShape(Capsule())
                                         .padding(.vertical, 5)
-                                        .matchedGeometryEffect(id: car.id, in: textAnimation)
                                 }
                                 .padding(5)
                                 .frame(width: 200, height: 150)

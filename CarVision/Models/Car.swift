@@ -6,37 +6,6 @@
 //
 
 import SwiftUI
-import FirebaseStorage
-import FirebaseFirestore
-
-class ViewModel: ObservableObject {
-    @Published var image = UIImage()
-    var imageURL: String
-    
-    init(imageURL: String) {
-        self.imageURL = imageURL
-    }
-    
-    func getImage() async -> UIImage? {
-        if let image = await loadImage(from: URL(string: self.imageURL)!) {
-            self.image = image
-            return image
-        }
-        return nil
-    }
-    
-    func loadImage(from url: URL) async -> UIImage? {
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            if let downloadedImage = UIImage(data: data) {
-                return downloadedImage
-            }
-        } catch {
-            print("Error downloading image: \(error)")
-        }
-        return nil
-    }
-}
 
 struct Car: Equatable, Identifiable, Codable {
     var id = UUID().uuidString
@@ -68,23 +37,6 @@ struct Car: Equatable, Identifiable, Codable {
         self.imageURL = imageURL
         self.isFavorite = false
 	}
-    
-    init(from decoder: any Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try container.decode(String.self, forKey: .id)
-        self.brand = try container.decode(String.self, forKey: .brand)
-        self.model = try container.decode(String.self, forKey: .model)
-        self.horsepower = try container.decode(String.self, forKey: .horsepower)
-        self.speed = try container.decode(String.self, forKey: .speed)
-        self.acceleration = try container.decode(String.self, forKey: .acceleration)
-        self.colorName = try container.decode(String.self, forKey: .colorName)
-        self.displacement = try container.decode(String.self, forKey: .displacement)
-        self.cylinders = try container.decode(String.self, forKey: .cylinders)
-        self.architecture = try container.decode(String.self, forKey: .architecture)
-        self.turbo = try container.decode(String.self, forKey: .turbo)
-        self.imageURL = try container.decode(String.self, forKey: .imageURL)
-        self.isFavorite = try container.decode(Bool.self, forKey: .isFavorite)
-    }
 	
 	init() {
 		self.brand = ""

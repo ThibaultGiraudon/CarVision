@@ -12,7 +12,6 @@ struct CarDetailView: View {
     @State var car: Car
     var uiImage: UIImage?
     let imageAnimation: Namespace.ID
-    let textAnimation: Namespace.ID
     @State var isFavorite = false
     @Environment(\.dismiss) var dismiss
     var body: some View {
@@ -24,7 +23,6 @@ struct CarDetailView: View {
             .matchedGeometryEffect(id: car.id, in: imageAnimation)
             Text("\(car.brand) \(car.model)")
                 .titleStyle(false)
-                .matchedGeometryEffect(id: car.id, in: textAnimation)
             LazyVGrid(columns: [.init(), .init()]) {
                 carInfo(title: "Power", info: car.horsepower)
                 carInfo(title: "Speed", info: car.speed)
@@ -84,7 +82,7 @@ struct CarDetailView: View {
 
 #Preview {
     NavigationStack {
-        CarDetailView(user: User(), 
+        CarDetailView(user: User(),
                       car: Car(brand: "BMW",
                                model: "m4",
                                horsepower: "510",
@@ -96,7 +94,6 @@ struct CarDetailView: View {
                                architecture: "Inline-6",
                                turbo: "twinturbo",
                                imageURL: "gs://carvision-b337f.appspot.com/IMG_2572.jpeg"),
-                      imageAnimation: Namespace().wrappedValue,
-                      textAnimation: Namespace().wrappedValue)
+                      imageAnimation: Namespace().wrappedValue)
     }
 }

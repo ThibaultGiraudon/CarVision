@@ -8,38 +8,8 @@
 import SwiftUI
 import PhotosUI
 
-enum Tab: String, CaseIterable, Identifiable {
-    case garage, gallery, history
-    
-    var id: String {
-        self.rawValue
-    }
-    
-    func name() -> String {
-        switch self {
-        case .garage:
-            return "Garage"
-        case .gallery:
-            return ""
-        case .history:
-            return "History"
-        }
-    }
-    
-    func imageName() -> String {
-        switch self {
-        case .garage:
-            return "door.garage.open"
-        case .history:
-            return "clock"
-        case .gallery:
-            return "photo.badge.plus"
-        }
-    }
-}
-
 struct ContentView: View {
-	@StateObject var user = User()
+    @StateObject var user = User.shared
     @State private var activeTab: Tab = .history
 	@State private var selectedItem: PhotosPickerItem?
 	@State private var selectedImage: UIImage?
@@ -149,22 +119,20 @@ struct ContentView: View {
                 }
             }
         }
-        .sheet(isPresented: $showCarDetail, onDismiss: {
-            croppedImage = nil
-        }) {
+        .sheet(isPresented: $showCarDetail) {
             NavigationStack {
-                CarAIView(user: user, uiImage: $croppedImage)
+                CarAIView(vm: CarViewModel(uiImage: croppedImage!))
             }
         }
         .onAppear {
             Task {
                 user.isListening = true
-                await user.listenToItems()
-                for car in user.history {
-                    await user.loadImage(for: car)
-                }
+                await user.getHistory()
                 user.isListening = false
             }
+        }
+        .onChange(of: croppedImage) {
+            showCarDetail = true
         }
     }
 	

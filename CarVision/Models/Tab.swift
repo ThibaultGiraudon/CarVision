@@ -1,3 +1,11 @@
+//
+//  Tab.swift
+//  CarVision
+//
+//  Created by Thibault Giraudon on 20/03/2025.
+//
+
+import SwiftUI
 
 enum Tab: String, CaseIterable, Identifiable {
     case garage, gallery, history

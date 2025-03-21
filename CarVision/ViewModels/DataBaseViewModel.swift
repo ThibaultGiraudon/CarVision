@@ -30,8 +30,12 @@ class DataBaseViewModel {
         try db.document("cars/\(car.id)").setData(from: car)
     }
     
-    func delete(_ car: Car) throws {
+    func delete(_ car: Car) {
         db.document("cars/\(car.id)").delete()
+    }
+    
+    func toggleFavorite(for car: Car) async throws {
+        try db.document("cars/\(car.id)").setData(from: car)
     }
     
 }
