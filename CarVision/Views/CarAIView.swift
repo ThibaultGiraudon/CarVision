@@ -34,10 +34,10 @@ struct CarAIView: View {
                     LazyVGrid(columns: [.init(), .init()]) {
                         carInfo(title: "Power", info: vm.car.horsepower)
                         carInfo(title: "Speed", info: vm.car.speed)
+                        carInfo(title: "Torque", info: vm.car.torque)
                         carInfo(title: "Acceleration", info: vm.car.acceleration)
-                        carInfo(title: "Color", info: vm.car.colorName)
+                        carInfo(title: "RPM", info: vm.car.rpm)
                         carInfo(title: "Displacement", info: vm.car.displacement)
-                        carInfo(title: "Cylinders", info: vm.car.cylinders)
                         carInfo(title: "Architecure", info: vm.car.architecture)
                         carInfo(title: "Turbo", info: vm.car.turbo)
                     }
@@ -68,7 +68,6 @@ struct CarAIView: View {
             }
         }
         .onAppear {
-            print("I'm here")
             vm.analyze()
         }
         .padding(.horizontal)

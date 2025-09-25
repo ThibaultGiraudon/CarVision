@@ -85,25 +85,12 @@ class User: ObservableObject {
         history.filter { $0.isFavorite }
     }
     
-    func addCarToFav(_ car: Car) {
+    func toggleFav(for car: Car) {
         if let index = history.firstIndex(of: car) {
-            history[index].isFavorite = true
+            history[index].isFavorite.toggle()
             Task {
                 do {
-                    try await db.toggleFavorite(for: car)
-                } catch {
-                    print(error)
-                }
-            }
-        }
-    }
-    
-    func removeCarFromFav(_ car: Car) {
-        if let index = history.firstIndex(of: car) {
-            history[index].isFavorite = false
-            Task {
-                do {
-                    try await db.toggleFavorite(for: car)
+                    try await db.toggleFavorite(for: history[index])
                 } catch {
                     print(error)
                 }

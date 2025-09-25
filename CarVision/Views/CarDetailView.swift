@@ -27,9 +27,9 @@ struct CarDetailView: View {
                 carInfo(title: "Power", info: car.horsepower)
                 carInfo(title: "Speed", info: car.speed)
                 carInfo(title: "Acceleration", info: car.acceleration)
-                carInfo(title: "Color", info: car.colorName)
+                carInfo(title: "Torque", info: car.torque)
+                carInfo(title: "RPM", info: car.rpm)
                 carInfo(title: "Displacement", info: car.displacement)
-                carInfo(title: "Cylinders", info: car.cylinders)
                 carInfo(title: "Architecure", info: car.architecture)
                 carInfo(title: "Turbo", info: car.turbo)
             }
@@ -54,7 +54,7 @@ struct CarDetailView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    isFavorite ? user.removeCarFromFav(car) : user.addCarToFav(car)
+                    user.toggleFav(for: car)
                     isFavorite.toggle()
                 } label: {
                     Image(systemName: "star.fill")
@@ -88,9 +88,9 @@ struct CarDetailView: View {
                                horsepower: "510",
                                speed: "305km\\h",
                                acceleration: "2,8",
-                               colorName: "isle of the green",
+                               torque: "418 Nm",
                                displacement: "3L",
-                               cylinders: "6",
+                               rpm: "9,000 tr/min",
                                architecture: "Inline-6",
                                turbo: "twinturbo",
                                imageURL: "gs://carvision-b337f.appspot.com/IMG_2572.jpeg"),
